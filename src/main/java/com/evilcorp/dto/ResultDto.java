@@ -1,18 +1,9 @@
 package com.evilcorp.dto;
 
-import com.evilcorp.enums.ResultStatus;
-
 public class ResultDto {
-    ResultStatus resultStatus;
+    int number;
 
-    public ResultDto() {
-    }
-
-    public ResultStatus getResultStatus() {
-        return this.resultStatus;
-    }
-
-    public void setResultStatus(ResultStatus resultStatus) {
-        this.resultStatus = resultStatus;
+    public int getNumber() {
+        return number;
     }
 }

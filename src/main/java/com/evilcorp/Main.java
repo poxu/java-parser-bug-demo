@@ -39,11 +39,12 @@ public class Main {
                     // RuntimeException is generated even though message says that
                     // method cannot be resolved
                     // Points to MyService line 12 for some reason
-                    System.out.println("methodCallExpr = " + methodCallExpr);
+                    System.out.println("RuntimeException methodCallExpr = " + methodCallExpr);
                     // Correctly points to result variable
                     System.out.println("nameExpr = " + nameExpr);
                     // Error message points to MyService line 10 for some reason
                     System.out.println("e.getMessage() = " + e.getMessage());
+                    throw e;
                 }
             }
             return false;

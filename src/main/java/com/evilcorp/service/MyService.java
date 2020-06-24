@@ -2,16 +2,15 @@ package com.evilcorp.service;
 
 import com.evilcorp.dto.MyDto;
 import com.evilcorp.dto.ResultDto;
-import com.evilcorp.enums.ResultStatus;
 
 public class MyService {
-    public ResultDto getResult(MyDto dto) {
+    public int getResult(MyDto dto) {
         ResultDto result = new ResultDto();
-        switch (dto.getStatus()) {
-            case FINE:
-                result.setResultStatus(ResultStatus.FIRST);
-                return result;
+        switch (dto.getNumber()) {
+            case 1:
+                result.getNumber();
+                return 2;
         }
-        return null;
+        return 2;
     }
 }
